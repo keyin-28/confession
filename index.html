@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confession Letter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="letter-container">
+        <h1>My Confession</h1>
+        <p id="confession-text" class="hidden">I've been meaning to tell you something for a while... I have feelings for you. ❤️</p>
+        <button id="reveal-btn">Click to Reveal</button>
+    </div>
+
+    <script>
+        document.getElementById("reveal-btn").addEventListener("click", function() {
+            document.getElementById("confession-text").classList.remove("hidden");
+            this.style.display = "none"; // Hide the button after clicking
+        });
+    </script>
+
+</body>
+</html>
